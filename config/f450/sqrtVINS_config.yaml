@@ -1,0 +1,40 @@
+/**:
+  ros__parameters:
+    driver:
+      i_enable_ir: true
+      i_publish_tf_from_calibration: true
+      i_tf_tf_prefix: oak
+      i_tf_camera_model: ''
+      i_tf_base_frame: oak
+      i_tf_parent_frame: oak_parent_frame
+      i_tf_cam_pos_x: '0.0'
+      i_tf_cam_pos_y: '0.0'
+      i_tf_cam_pos_z: '0.0'
+      i_tf_cam_roll: '0.0'
+      i_tf_cam_pitch: '0.0'
+      i_tf_cam_yaw: '0.0'
+      i_tf_imu_from_descr: 'false'
+      i_pipeline_auto_calibration_mode: ''
+    pipeline_gen:
+      i_pipeline_type: Stereo
+      i_nn_type: none
+    rgb:
+      i_fps: 60.0
+      i_publish_topic: false
+    stereo:
+      i_fps: 60.0
+      i_publish_topic: false
+      i_left_rect_publish_topic: true
+      i_right_rect_publish_topic: true
+    left:
+      i_fps: 60.0
+    right:
+      i_fps: 60.0
+    imu:
+      i_acc_freq: 400
+      i_gyro_freq: 400
+      i_batch_report_threshold: 1
+      i_max_batch_reports: 10
+      i_enable_rotation: false
+      i_enable_mag: false
+      i_sync_method: LINEAR_INTERPOLATE_ACCEL
